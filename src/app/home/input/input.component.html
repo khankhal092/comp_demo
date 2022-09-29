@@ -1,0 +1,9 @@
+<div>
+    <h3>input Component</h3>
+    <br>
+    <input type="text" placeholder="enter value" #val (keyup)="onPress(val.value)">
+    <div>
+        Input value : <strong>{{value}}</strong>
+    </div>
+</div>
+<app-show-com [item]="data" (parentFunction)="parentComponent($event)"></app-show-com>
